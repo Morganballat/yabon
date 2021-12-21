@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Azonix;
+  src: url("src/assets/fonts/Azonix.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Valak;
+  src: url("src/assets/fonts/Valak/Valak-Light.otf") format("opentype");
+}
+
+$title-font: Azonix;
+$text-font: Valak;
+$gutter: 2em;
+
+//BreakPoints
+
+$breakpoint-smartphone: 479px;
+$breakpoint-smartphone-landscape: 480px;
+$breakpoint-tablet: 959px;
+$breakpoint-desktop: 1280px;

@@ -1,0 +1,171 @@
+@use 'src/styles/vars' as v;
+
+.odds_container {
+  margin: v.$gutter;
+}
+
+.bet_analysis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards_prono {
+  min-width: 70%;
+}
+
+.bet_stats {
+  display: flex;
+  justify-content: space-around !important;
+  padding: v.$gutter/2;
+  width: 40%;
+  background-color: white;
+  border-radius: 0.5em;
+  font-family: v.$text-font;
+  font-weight: bold;
+  opacity: 0.9;
+  & h2 {
+    padding-top: 0.5em;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.bet_text-content {
+  font-size: 1.7em;
+  font-family: v.$text-font;
+  line-height: 1.2em;
+  margin: 0.4em 1em;
+}
+
+.bet_cote-content {
+  display: inline-block;
+  font-size: 1.7em;
+  font-family: v.$text-font;
+  margin: 0em 1em;
+}
+
+.bet_value {
+  display: flex;
+  & p {
+    margin: 10px;
+    font-size: 2rem;
+  }
+}
+
+.slug_picture {
+  width: 4em;
+  padding-top: 1em;
+}
+.history {
+  flex: 1 40%;
+  margin-right: v.$gutter * 2;
+  background-color: #fff;
+  height: v.$gutter * 5;
+  margin: auto;
+  margin-bottom: v.$gutter * 2;
+  border-radius: 4px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+//Loader
+.box {
+  margin: 0 auto;
+  width: 100px;
+  height: 240px;
+  // border: solid 1px black;
+  position: relative;
+
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+    bottom: 0;
+    border-radius: 100%;
+    transform: scaleX(0.8);
+    opacity: 0.6;
+    animation: shadowScale 1s linear infinite;
+  }
+}
+.gravity {
+  width: 100px;
+  height: 100px;
+  animation: bounce 1.5s cubic-bezier(0.01, 0.01, 0, 0.01) infinite;
+}
+.ball {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fa/Meuble_h%C3%A9raldique_ballon.svg");
+  color: white;
+  background-size: cover;
+  animation: roll 1s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce {
+  0% {
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+  }
+}
+@keyframes shadowScale {
+  0% {
+  }
+  50% {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
+  100% {
+  }
+}
+//End loader
+
+@media (max-width: v.$breakpoint-tablet) {
+  .bet_analysis {
+    display: block;
+    align-items: center;
+  }
+
+  .bet_stats {
+    display: block;
+    padding: v.$gutter/2;
+    width: 40%;
+    background-color: white;
+    border-radius: 0.5em;
+    font-family: v.$text-font;
+    font-weight: bold;
+    opacity: 0.9;
+    & h2 {
+      padding-top: 0.5em;
+      font-size: 1em;
+    }
+  }
+  .bet_value {
+    display: block;
+    & p {
+      margin: 10px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: v.$breakpoint-smartphone-landscape) {
+}
+
+@media (min-width: v.$breakpoint-tablet) and (max-width: v.$breakpoint-desktop) {
+}

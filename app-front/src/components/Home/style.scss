@@ -1,0 +1,182 @@
+@use 'src/styles/vars' as v;
+
+.home {
+  align-items: center;
+  margin: 1em 0;
+}
+
+.home__button_container {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: v.$gutter * 2 0;
+}
+
+.home__button {
+  background-color: #1f8ce8;
+  color: white;
+  font-family: v.$title-font;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  padding: 1.5em 3em;
+  border-radius: 2em;
+
+  &__button_container {
+    margin-top: 2em;
+  }
+}
+
+.cards {
+  width: auto;
+  &_card {
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    padding: 2em 2em 1em 2em;
+    margin: 1.2em;
+    background-color: rgb(46, 45, 45);
+    border-radius: 1em;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &_card-header {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  &_card-content {
+    color: white;
+    font-size: 1.2em;
+  }
+  &_card-outro {
+    color: lightgray;
+    font-weight: bold;
+    text-align: right;
+  }
+  &_card-numbers {
+    padding: 0.2em 0.2em 0.2em 0.2em;
+  }
+  &_card-body {
+  }
+  &_network-title {
+    color: white;
+    font-size: 2em;
+    font-family: azonix;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1.2em;
+  }
+}
+
+.cards_numbers {
+  margin-bottom: 1em;
+}
+
+.network-logo {
+  max-width: 4em;
+  vertical-align: middle;
+  margin: 1em;
+}
+
+th {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  color: white;
+}
+
+td,
+th {
+  padding: 1em;
+  background: #ddd;
+  border-bottom: 2px solid white;
+  //
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+tr th {
+  background-color: rgb(46, 45, 45);
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  padding: 1em 2em 1em 2em;
+  margin: 1.2em;
+  background-color: rgb(46, 45, 45);
+  width: 100%;
+}
+
+.positive {
+  background-color: rgba(0, 128, 0, 0.712);
+}
+
+.negative {
+  background-color: rgba(255, 0, 0, 0.712);
+}
+
+.highlights {
+  margin-top: 0.5em;
+}
+
+@media (max-width: v.$breakpoint-tablet) {
+  .cards_card-network {
+    text-align: center;
+  }
+}
+@media (min-width: v.$breakpoint-desktop) {
+  .cards {
+    text-align: center;
+
+    width: auto;
+    &_card {
+      color: white;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      padding: 1em 2em 1em 2em;
+      margin: 1.2em;
+      background-color: rgb(46, 45, 45);
+      border-radius: 1em;
+      width: 30%;
+      display: inline-block;
+      height: 15em;
+      vertical-align: middle;
+    }
+
+    &_card-header {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    &_card-content {
+      color: white;
+      font-size: 1.2em;
+    }
+    &_card-outro {
+      color: lightgray;
+      font-weight: bold;
+      text-align: right;
+    }
+    &_card-numbers {
+      padding: 0.2em 0.2em 0.2em 0.2em;
+    }
+    &_card-number {
+    }
+    &_network-title {
+      color: white;
+      font-size: 2em;
+      font-family: azonix;
+      text-align: center;
+    }
+  }
+}

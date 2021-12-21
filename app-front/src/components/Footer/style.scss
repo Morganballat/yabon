@@ -1,0 +1,24 @@
+@use 'src/styles/vars' as v;
+
+footer {
+  padding: 15px;
+  background-color: #392b42;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  height: 6em;
+}
+
+.footer_content {
+  margin-top: 0.8em;
+  font-size: 0.7em;
+}
+
+// .modal-button {
+//   margin-top: -0.5em !important;
+//   // font-size: 0.8em !important;
+// }
+
+@media (max-width: v.$breakpoint-tablet) {
+}

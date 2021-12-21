@@ -1,0 +1,46 @@
+@use 'src/styles/vars' as v;
+
+.team_content {
+  text-align: center;
+  color: white;
+}
+
+.team_mate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team_card {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.5em;
+  margin: 2em auto;
+  max-width: 200px;
+}
+
+.team_name {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+}
+
+.team_jobs {
+  height: 120px;
+}
+
+.team_job {
+  margin-bottom: 0.5em;
+}
+.team_pic-container {
+  height: 250px;
+  display: flex;
+}
+
+.team_pic {
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+}

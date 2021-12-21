@@ -1,0 +1,131 @@
+@use 'src/styles/vars' as v;
+
+.results {
+  background-color: transparent;
+  width: 100%;
+  margin: auto;
+}
+.cards_network-title {
+  text-align: center;
+  margin: auto;
+}
+
+.results__container {
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.results__cards {
+  width: 100%;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.negative {
+  color: rgb(250, 86, 86);
+}
+
+.positive {
+  color: rgb(36, 173, 36);
+}
+
+// l'espace pour les ronds highlights
+.highlights {
+  color: black;
+  height: v.$gutter * 7;
+  border-radius: 4px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-around;
+  &_title {
+    color: white;
+    font-size: 2em;
+    font-family: azonix;
+    text-align: center;
+    width: 50%;
+    margin: 0.8em 0;
+  }
+  &_header {
+    display: flex;
+  }
+}
+
+.highlights__circle {
+  width: v.$gutter * 5;
+  height: v.$gutter * 5;
+  text-align: center;
+  margin: auto;
+}
+
+.CircularProgressbar-path {
+  stroke: #1e8ce8 !important;
+}
+.CircularProgressbar-trail {
+  stroke: gray !important;
+}
+.CircularProgressbar-text {
+  fill: white !important;
+}
+.CircularProgressbar-background {
+  fill: white !important;
+}
+
+// espace pour le graphique bankroll
+.bankroll {
+  background-color: rgb(46, 45, 45);
+  opacity: 0.95;
+  width: 70%;
+  height: 70%;
+  margin: v.$gutter * 2 auto;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.ui.tabular.menu .item {
+  color: white;
+  border: none;
+}
+
+.ui.tabular.menu .active.item {
+  color: white;
+  border: none;
+  background-color: rgb(46, 45, 45);
+  border-radius: 1em !important;
+}
+
+.ui.segment:last-child {
+  background-color: rgb(46, 45, 45);
+  border-radius: 1em !important;
+}
+
+table {
+  background-color: rgb(221, 221, 221);
+  border-radius: 1em;
+  width: 70%;
+  margin: v.$gutter * 2 auto;
+}
+
+@media (max-width: v.$breakpoint-tablet) {
+  .results__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bankroll {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-bottom: v.$gutter;
+    box-shadow: none;
+  }
+
+  .results__container {
+    box-shadow: none;
+    margin-top: -3em;
+  }
+
+  .results__container-table {
+    margin-top: 0.5em;
+  }
+}

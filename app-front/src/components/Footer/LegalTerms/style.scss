@@ -1,0 +1,16 @@
+.modal-button {
+  background-color: transparent !important;
+  color: white !important;
+  &:hover {
+    background-color: white !important;
+    color: green !important;
+  }
+}
+
+h1 {
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+p {
+  justify-content: center !important;
+}

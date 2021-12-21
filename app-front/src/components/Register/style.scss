@@ -1,0 +1,25 @@
+@use 'src/styles/vars' as v;
+
+.register {
+  width: 70%;
+  margin: auto auto 1em auto;
+  border-radius: 1em;
+}
+
+.cards_network-title {
+  color: white;
+  font-size: 2em;
+  font-family: azonix;
+  margin: auto;
+}
+
+.ui.form .field > label {
+  color: white;
+}
+
+.field {
+  color: white;
+  & p {
+    font-size: 1em;
+  }
+}

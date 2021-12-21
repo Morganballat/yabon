@@ -1,0 +1,58 @@
+@use 'src/styles/vars' as v;
+
+.profile_textarea {
+  width: 350px;
+  height: 200px;
+  padding-bottom: 5px;
+  resize: none;
+  border-radius: 1em;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  padding: 2em 2em 1em 2em;
+  margin: 1.2em;
+  background-color: rgb(46, 45, 45);
+  border-radius: 1em;
+  vertical-align: middle;
+  border: none;
+}
+
+.profile_container {
+  text-align: center;
+}
+
+.profile_container {
+  display: block;
+}
+
+.profile_label {
+  color: white;
+  font-size: 2em;
+  font-family: azonix;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1.2em;
+  margin: auto;
+}
+
+.delete_button {
+  background-color: red;
+  color: white;
+  font-family: v.$title-font;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.7em 1em;
+  border-radius: 2em;
+  margin: 2em 2em 2em 2em;
+  position: sticky left;
+}
+
+.send_comment {
+  background-color: #1f8ce8;
+  color: white;
+  font-family: v.$title-font;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.8em 1.2em;
+  border-radius: 2em;
+}
